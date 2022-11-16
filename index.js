@@ -14,17 +14,25 @@ function divide(a, b){
     const result = a / b
     return result;
 }
-// returns NaN as appropriate
-function makeInt(){
-    const parsed =parseInt("random", 10);
-    return parsed
-}
-function makeInt(){
-    const n = 2.125
+// parses n as an integer and returns the parsed integer
+// ✓ assumes base 10
+// ✓ returns NaN as appropriate
+function makeInt(n){
     const parsed =parseInt(`${n}`, 10);
-    return parsed
+    return `${parsed}`;
 }
-// function add(){
-// }
-// function add(){
-// }
+function increment(n){
+    const nIncreament = (n+=1)
+    return nIncreament
+}
+function decreament(n){
+    const decrement = (n--)
+    // const result = decrement
+    return decrement
+}
+decreament(150)
+function preserveDecimal(n){
+    const parsed =parseInt(`${n}`, 10);
+    return parsed[`${n}`];
+}
+preserveDecimal()
