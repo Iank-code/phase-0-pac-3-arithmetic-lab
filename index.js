@@ -29,7 +29,6 @@ function decrement(n){
     const decrement = n - 1;
     return decrement
 }
-decreament()
 function preserveDecimal(n){
     return parseFloat(n)
 }
