@@ -25,14 +25,12 @@ function increment(n){
     const nIncreament = (n+=1)
     return nIncreament
 }
-function decreament(n){
-    const decrement = (n--)
-    // const result = decrement
+function decrement(n){
+    const decrement = n - 1;
     return decrement
 }
-decreament(150)
+decreament()
 function preserveDecimal(n){
-    const parsed =parseInt(`${n}`, 10);
-    return parsed[`${n}`];
+    return parseFloat(n)
 }
 preserveDecimal()
